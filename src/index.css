@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+@layer base {
+    html {
+      font-family: "Rubik", sans-serif;
+      color: #393c41;
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    button{
+        height: 40px;
+        width: 256px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        opacity: 0.85;
+        text-transform: uppercase;
+        font-size: 13px;
+        cursor: pointer;
+    }
+  }
